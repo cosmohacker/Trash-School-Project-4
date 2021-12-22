@@ -14,4 +14,4 @@ To obtain basic experience and knowledge to work with project tracking system
 6. Prepare the report of the work.
 
 <h1>IS THIS A SIMULATION ?</h1>
-<h3>Maybe! (%85) Schools just teach people how to bark, that's all.</h3>
+<h3>Maybe! (%85) Schools just teach people how to bark, that's all. None of them prepare for life.</h3>
