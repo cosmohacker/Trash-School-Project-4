@@ -1,3 +1,125 @@
+<style>
+  body {
+  margin: 0;
+}
+
+svg {
+  max-width: 90%;
+  height: 80vh;
+  width: auto;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #b7c4c8;
+}
+
+.ctn {
+  width: 100%;
+  text-align: center;
+}
+
+#timeout-text {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: calc(2vw + 2vh);
+}
+
+@keyframes swing {
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#face {
+  animation: spin 2s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#pointer {
+  visibility: hidden;
+}
+
+#arm {
+  animation: swing 0.8s ease-in forwards;
+  transform-box: fill-box;
+  transform-origin: top center;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+#loading-bar path {
+  animation: blink 1s linear infinite;
+}
+
+#loading-bar path:nth-child(1) {
+  animation-delay: 50ms;
+}
+
+#loading-bar path:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+#loading-bar path:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+#loading-bar path:nth-child(4) {
+  animation-delay: 200ms;
+}
+
+#loading-bar path:nth-child(5) {
+  animation-delay: 250ms;
+}
+
+#loading-bar path:nth-child(6) {
+  animation-delay: 300ms;
+}
+
+@keyframes swap {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+}
+
+#loading-face {
+  animation: swap 8s linear 5s infinite;
+}
+
+@keyframes reveal {
+  100% {
+    /* visibility: visible; */
+    transform: scale(1);
+  }
+}
+
+#server-text {
+  /* visibility: hidden; */
+  animation: reveal 0.5s linear 2s forwards;
+  transform: scale(0);
+  transform-box: fill-box;
+  transform-origin: top left;
+}
+  </style
+
 <div class="section">
   <div class="ctn">
     <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="800" width="800" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800.00001" xmlns:dc="http://purl.org/dc/elements/1.1/">
